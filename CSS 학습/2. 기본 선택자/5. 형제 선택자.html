@@ -8,14 +8,17 @@
     <title>Document</title>
 </head>
 <style>
+    /* li 태그 중 모든 형 중에 클래스가 orang인 형이 있는 애들한테 적용 */
     .orang ~ li{
         background: orangered;
     }
 
+    /* .orang 중 li태그인 형이 존재하는 애한테 적용 */
     li + .orang{
         color: orange;
     }
 
+    /* li 태그 중에서 li 태그인 형이 존재하는 애들한테 적용 => 맨 처음 li빼고 나머지에 다 적용됨 */
     li + li{
         font-weight: 700;
     }

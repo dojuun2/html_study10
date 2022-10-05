@@ -28,8 +28,47 @@
             3번째 이후요소만 선택후 border: 2px dashed violet 적용 (3번째부터 끝까지 선택)
         */
 
-        
+        /* 1 */
+        #list li:nth-child(odd){
+            background: yellow;
+        }
 
+        /* 2 */
+        #list li:nth-child(even){
+            background: gray;
+        }
+
+        /* 3 */
+        #list li:first-child{
+            color: red;
+        }
+
+        /* 4 */
+        #list li:last-child{
+            color: green;
+        }
+
+        /* 5 */
+        #list li:nth-child(2){
+            font-style: italic;
+        }
+
+        /* 6 */
+        #list li:nth-child(-n+2){
+            border: 2px dotted aqua;
+        }
+        /* #list li:nth-last-child(n+6){
+            border: 2px dotted aqua;
+        } */
+
+        /* 7 */
+        #list li:nth-child(n+3){
+            border: 2px dashed violet;
+        }
+        /* li:nth-child(2) ~ li {} */
+
+        
+        
     </style>
 </head>
 <body>
