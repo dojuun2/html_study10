@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="korean">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            margin: 20px;
+            padding: 20px;
+            border: 3px solid red;
+        }
+        .container2 {
+            width: 700px;
+            margin: 20px;
+            padding: 20px;
+            border: 3px solid blue;
+        }
+        .container3 {
+            width: 700px;
+            margin: 20px;
+            padding: 20px;
+            border: 3px solid green;
+        }
+
+        .box{
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 20px;
+
+            float: left;
+        }
+
+        /* 임의로 클래스 만들어 놓고 해제가 필요한 애들한테 clearfix 클래스를 추가하는 방식 */
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
